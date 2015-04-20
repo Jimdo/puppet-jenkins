@@ -10,6 +10,7 @@ class jenkins::params {
   $install_java               = true
   $swarm_version              = '1.17'
   $default_plugins_host       = 'http://updates.jenkins-ci.org'
+  $max_open_files             = 8192
 
   case $::osfamily {
     'Debian': {

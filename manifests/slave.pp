@@ -79,6 +79,7 @@ class jenkins::slave (
   $disable_ssl_verification = false,
   $labels                   = undef,
   $install_java             = $jenkins::params::install_java,
+  $max_open_files           = $jenkins::params::max_open_files,
   $ensure                   = 'running',
   $enable                   = true
 ) inherits jenkins::params {
